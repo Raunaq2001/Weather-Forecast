@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="/assets/favicon.ico">
+  <title>Weather Forecast</title>
+  <!-- Bootstrap CDB -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Custom Style Sheet -->
+  <link href="/assets/styles.css" rel="stylesheet">
+</head>
+<body class="text-center">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Forecast</h1>
+      <p class="lead">Temperature = <%= Obj.Temperature %> °C</p>
+      <p class="lead">Feels Like = <%= Obj.feelsLike %> °C</p>
+      <p class="lead">Temperature (Min) = <%= Obj.temperatureMin %> °C</p>
+      <p class="lead">Temperature (Max) = <%= Obj.temperatureMax %> °C</p>
+      <p class="lead">Humidity = <%= Obj.humidity %> g/kg</p>
+      <p class="lead">Pressure = <%= Obj.pressure %> Pa</p>
+      <img src="<%= Obj.icon %>" alt="Weather Icon" class="lead">
+    </div>
+  </div>
+</body>
+</html>
